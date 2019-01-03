@@ -47,7 +47,7 @@ Window_Main::Window_Main(QPoint Start1_isd, QPoint End1_isd, QPoint Start2_isd, 
 
 	connect(ui.pushButton_1, SIGNAL(clicked()), this, SLOT(Start(void)));//关联开始按钮
 	connect(ui.pushButton_2, SIGNAL(clicked()), this, SLOT(close(void)));//关联退出按钮
-	connect(T2, SIGNAL(Touch(void)), this, SLOT(Judge(void)));//WTF???你妈啊！为什么连不上啊！更新：=_=原来是槽函数声明没放到正确位置。。。
+	connect(T2, SIGNAL(Touch(void)), this, SLOT(Judge(void)));
 }
 
 Window_Main::~Window_Main()
